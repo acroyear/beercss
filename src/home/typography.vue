@@ -54,6 +54,17 @@
       em emphasized
       strong strong
       b bold
+  h6.middle-align
+    span Sub and Super
+    button.chip.circle(@click="domain.showSamples(data, '#sub-and-sup nav *', 'Formatting', null, 'https://github.com/beercss/beercss/blob/main/docs/TYPOGRAPHY.md#formatting-example')")
+      i code
+  .space
+  #sub-and-sup
+    nav.wrap
+      span 10
+        sub 100
+      span 10
+        sup 100
   .medium-space
   h6.middle-align
     span Line spacing
@@ -111,6 +122,6 @@
 </template>
 
 <script setup lang="ts">
-import domain from "./domain";
 import data from "./data";
+import domain from "./domain";
 </script>
